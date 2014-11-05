@@ -6,16 +6,20 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:21:22 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/03 16:46:58 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/05 15:33:36 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 int		ft_strcmp(const char *s1, const char *s2)
 {
 	int i;
+	char *s11;
+	char *s22;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i])
+	s11 = s1;
+	s22 = s2;
+	while (s11[i] != '\0' && s22[i] != '\0' && s11[i] == s22[i])
 		i++;
-	return (s1[i] - s2[i])
+	return (s11[i] - s22[i])
 }

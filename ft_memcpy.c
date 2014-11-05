@@ -1,24 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:13:36 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 13:56:16 by rrhoum           ###   ########.fr       */
+/*   Created: 2014/11/04 15:04:44 by rrhoum            #+#    #+#             */
+/*   Updated: 2014/11/05 13:59:49 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
 	size_t i;
 
 	i = 0;
-	while (i < len)
+	while (i < n)
 	{
-		((char *)b)[i] = c;
+		((char *)dest)[i] = ((const char *)src)[i];
 		i++;
 	}
-	return (b);
+	return (dest);
 }

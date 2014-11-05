@@ -1,24 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:13:36 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 13:56:16 by rrhoum           ###   ########.fr       */
+/*   Created: 2014/11/04 17:47:55 by rrhoum            #+#    #+#             */
+/*   Updated: 2014/11/05 16:06:56 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+char		*ft_strcat(char *dest, const char *src)
 {
-	size_t i;
+	size_t	i;
+	size_t	a;
 
 	i = 0;
-	while (i < len)
+	while (dest[i] != '\0')
 	{
-		((char *)b)[i] = c;
 		i++;
 	}
-	return (b);
+	a = i;
+	i = 0;
+	while (src[i] != '\0')
+	{
+		dest[a + i] = src[i];
+		i++;
+	}
+	dest[a + i] = '\0';
+	return (dest);
 }

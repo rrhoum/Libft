@@ -1,24 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 15:13:36 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 13:56:16 by rrhoum           ###   ########.fr       */
+/*   Created: 2014/11/05 14:35:16 by rrhoum            #+#    #+#             */
+/*   Updated: 2014/11/05 15:26:35 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memset(void *b, int c, size_t len)
+int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t i;
+	size_t	i;
+	char	*s11;
+	char	*s22;
 
+	s11 = (char *)s1;
+	s22 = (char *)s2;
 	i = 0;
-	while (i < len)
+	while (i < n)
 	{
-		((char *)b)[i] = c;
+		if (s11[i] != s22[i])
+			return (s11[i] - s22[i]);
 		i++;
 	}
-	return (b);
+	return (0);
 }
