@@ -6,11 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:07:08 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/03 15:09:09 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/07 14:59:10 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char	*ft_strcpy(char *dest, char *src)
+char	*ft_strcpy(char *dest, const char *src)
 {
 	int i;
 

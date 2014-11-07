@@ -6,11 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 13:09:47 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/03 16:46:06 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/07 14:56:26 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t		ft_strlen(char *str)
+size_t		ft_strlen(const char *str)
 {
 	size_t i;
 

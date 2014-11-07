@@ -6,13 +6,13 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:48:16 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 13:56:51 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/06 17:19:39 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_bzero(void *s, size_t n)
 {
-	size_t i;
+	size_t	i;
 
 	i = 0;
 	while (i < n)
