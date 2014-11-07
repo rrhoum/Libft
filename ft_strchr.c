@@ -6,22 +6,22 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:37:36 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 16:49:08 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/07 17:10:09 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-char		*ft_strchr(const char *s, int c)
+#include <libft.h>
+
+char	*ft_strchr(const char *s, int c)
 {
-	size_t	i;
-	char	s1;
+	int	i;
 
 	i = 0;
-	s1 = s;
-	while (s1[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (s1[i] == c)
-			return (&s1[i]);
+		if (s[i] == c)
+			return ((char *)&s[i]);
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
