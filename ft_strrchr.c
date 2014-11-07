@@ -5,25 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 16:50:05 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 17:02:23 by rrhoum           ###   ########.fr       */
+/*   Created: 2014/11/07 16:08:58 by rrhoum            #+#    #+#             */
+/*   Updated: 2014/11/07 16:54:49 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <libft.h>
 
 char		*ft_strrchr(const char *s, int c)
 {
 	size_t	i;
-	char	*s1;
 	char	*a;
 
 	i = 0;
-	s1 = s;
 	a = 0;
-	while (s1[i] != '\0')
+	while (s[i] != '\0')
 	{
-		if (s1[i] == c)
-			a = &s1[i];
+		if (s[i] == c)
+			a = (char *)&s[i];
 		i++;
 	}
-	return (a);
+	if (a == 0)
+		return (0);
+	else
+		return (a);
 }
