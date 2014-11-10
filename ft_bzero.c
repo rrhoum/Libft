@@ -6,9 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 14:48:16 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/06 17:19:39 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/10 17:47:08 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_bzero(void *s, size_t n)
 {
