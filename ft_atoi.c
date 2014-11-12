@@ -1,21 +1,40 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isdigit.c                                       :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 15:49:03 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/12 16:06:45 by rrhoum           ###   ########.fr       */
+/*   Created: 2014/11/12 15:15:32 by rrhoum            #+#    #+#             */
+/*   Updated: 2014/11/12 16:34:09 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isdigit(int c)
+int		ft_atoi(const char *str)
 {
-	if (c >= '0' && c <= '9')
-		return (1);
-	else
+	int	i;
+	int	nbr;
+	int	len;
+
+	i = 0;
+	nbr = 0;
+	len = 1;
+	if (str == NULL)
 		return (0);
+	while (str[i] == ' ' || str[i] == '\t' || str[i] == '\n' || str[i] == '\f'
+			|| str[i] == '\r' || str[i] == '\v')
+		i++;
+	if (str[i] == '-')
+		len = -1;
+	if (str[i] == '-' || str[i] == '+')
+		i++;
+	while (ft_isdigit(str[i]))
+	{
+		nbr = (nbr * 10) + (str[i] - '0');
+		i++;
+	}
+	nbr *= len;
+	return (nbr);
 }
