@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/17 16:27:17 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/17 17:36:53 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/17 17:49:53 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,7 @@ int		ft_atoi(const char *str)
 		i++;
 	while (str[i] != '\0' && ft_isdigit(str[i]))
 	{
-		nbr *= 10;
-		nbr += str[i] - 48;
+		nbr = (nbr * 10) + (str[i] - '0');
 		i++;
 	}
 	return (nbr * neg);
