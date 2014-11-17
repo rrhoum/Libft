@@ -6,11 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 16:12:15 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/10 17:14:45 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/17 16:16:14 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
 {

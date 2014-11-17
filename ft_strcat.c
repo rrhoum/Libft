@@ -6,9 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:47:55 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 16:06:56 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/17 16:09:48 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char		*ft_strcat(char *dest, const char *src)
 {

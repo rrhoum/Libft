@@ -6,11 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 16:08:58 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/07 16:54:49 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/17 16:12:45 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char		*ft_strrchr(const char *s, int c)
 {

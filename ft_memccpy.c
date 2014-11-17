@@ -6,9 +6,11 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:26:39 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/05 14:20:30 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/17 16:04:20 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void		*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
