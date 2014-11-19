@@ -6,19 +6,19 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/17 14:39:33 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/17 16:01:25 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/19 16:52:58 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void		*ft_memmove(void *dst, const void *src, size_t len)
+void		*ft_memmove(void *s1, const void *s2, size_t n)
 {
 	void	*tmp;
 
-	tmp = malloc(len);
-	tmp = ft_memcpy(tmp, src, len);
-	ft_memcpy(dst, tmp, len);
+	tmp = malloc(n);
+	tmp = ft_memcpy(tmp, s2, n);
+	ft_memcpy(s1, tmp, n);
 	free(tmp);
-	return (dst);
+	return (s1);
 }

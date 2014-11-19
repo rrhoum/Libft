@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 17:17:15 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/17 16:05:19 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/19 16:35:19 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void				*ft_memchr(const void *s, int c, size_t n)
 {
 	size_t			i;
-	char			*s2;
+	const char		*s2;
 	unsigned char	s1;
 
 	i = 0;
@@ -23,9 +23,9 @@ void				*ft_memchr(const void *s, int c, size_t n)
 	s1 = c;
 	while (i < n)
 	{
-		if (s2[i] == s1)
+		if (s2[i] == (unsigned char)s1)
 		{
-			return (&s2[i]);
+			return ((void*)&s2[i]);
 		}
 		i++;
 	}

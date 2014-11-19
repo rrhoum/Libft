@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 14:41:12 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/18 16:30:26 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/19 16:55:48 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,7 @@ int			ft_isascii(int c);
 int			ft_isprint(int c);
 int			ft_toupper(int c);
 int			ft_tolower(int c);
+int			ft_isspace(int c);
 
 void		*ft_memalloc(size_t size);
 void		ft_memdel(void **ap);
