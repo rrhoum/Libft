@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 15:26:39 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/17 16:04:20 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/19 18:52:58 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void		*ft_memccpy(void *dest, const void *src, int c, size_t n)
 	while (i < n)
 	{
 		if (ptr[i] == c)
-			return (&ptr[i + 1]);
+			return (&((char *)dest)[i + 1]);
 		((char *)dest)[i] = ptr[i];
 		i++;
 	}

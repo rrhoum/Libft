@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/18 15:25:23 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/18 15:35:35 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/19 18:10:00 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char *))
 {
-	size i;
+	size_t i;
 
 	i = 0;
 	if (s && f)
