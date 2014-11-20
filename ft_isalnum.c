@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 15:52:45 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/17 16:18:02 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/20 14:57:42 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,7 @@
 
 int	ft_isalnum(int c)
 {
-	if (c >= 'a' && c <= 'z' || c >= 'A' && c <= 'Z' || c >= '0' || c <= '9')
+	if (ft_isalpha(c) || ft_isdigit(c))
 		return (1);
 	else
 		return (0);
