@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 14:35:16 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/17 16:06:22 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/24 17:25:49 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,9 @@
 
 int			ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	size_t	i;
-	char	*s11;
-	char	*s22;
+	size_t				i;
+	const unsigned char	*s11;
+	const unsigned char	*s22;
 
 	s11 = (char *)s1;
 	s22 = (char *)s2;
