@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 16:12:15 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/18 16:38:45 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/25 15:43:53 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,9 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n)
 	int i;
 
 	i = 0;
-	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && i < n)
+	if (n == 0)
+		return (0);
+	while (s1[i] != '\0' && s2[i] != '\0' && s1[i] == s2[i] && --n)
 		i++;
 	return (s1[i] - s2[i]);
 }
