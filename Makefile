@@ -6,7 +6,7 @@
 #    By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/19 15:41:05 by rrhoum            #+#    #+#              #
-#    Updated: 2014/11/19 18:09:16 by rrhoum           ###   ########.fr        #
+#    Updated: 2014/11/25 16:47:42 by rrhoum           ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -14,7 +14,7 @@ NAME = libft.a
 
 CC = gcc
 
-CFLAGES = -Wall -Wextra -Werror -03 
+CFLAGES = -Wall -Wextra -Werror
 
 RM = rm -f
 
