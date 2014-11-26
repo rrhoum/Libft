@@ -6,7 +6,7 @@
 /*   By: rrhoum <rrhoum@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 14:41:12 by rrhoum            #+#    #+#             */
-/*   Updated: 2014/11/19 16:55:48 by rrhoum           ###   ########.fr       */
+/*   Updated: 2014/11/26 16:00:36 by rrhoum           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,7 +30,7 @@ char		*ft_strcpy(char *dest, const char *src);
 char		*ft_strncpy(char *dest, const char *src, size_t n);
 char		*ft_strcat(char *dest, const char *src);
 char		*ft_strncat(char *dest, const char *src, size_t n);
-size_t		ft_strlcat(char *s1, const char *s2, size_t n);
+size_t		ft_strlcat(char *dst, const char *src, size_t size);
 char		*ft_strchr(const char *s, int c);
 char		*ft_strrchr(const char *s, int c);
 char		*ft_strstr(const char *s1, const char *s2);
@@ -61,4 +61,13 @@ char		*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 int			ft_strequ(char const *s1, char const *s2);
 int			ft_strnequ(char const *s1, char const *s2, size_t n);
 
+void		ft_putchar(char c);
+void		ft_putstr(char const *s);
+
+void		ft_putendl(char const *s);
+void		ft_putnbr(int n);
+void		ft_putchar_fd(char c, int fd);
+void		ft_putstr_fd(char const *s, int fd);
+void		ft_putendl_fd(char const *s, int fd);
+void		ft_putnbr_fd(int n, int fd);
 #endif
